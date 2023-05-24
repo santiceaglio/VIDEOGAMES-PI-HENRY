@@ -1,0 +1,65 @@
+ .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 5px #5804d7; /* Ajusta el color y los valores de la sombra según tus preferencias */
+    border-radius: 5px;
+    background: rgba(0,0,0,0.7);
+    overflow: visible;
+    background-color: rgb(84, 83, 83); /* Ajusta el valor alpha (0.7) para controlar la transparencia */
+
+}
+
+.contentImage{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: -33%;
+    margin-top: -1px;
+    
+} 
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  object-position: center;
+}
+
+
+
+.contentText{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.name:hover{
+    color: #5804d7;
+}
+
+.id{
+    color: white;
+    font-size: 20px;
+     font-family: RobotoLightItalica;
+    font-weight: 700;
+} 
+

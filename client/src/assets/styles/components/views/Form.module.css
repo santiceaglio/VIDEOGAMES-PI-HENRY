@@ -1,0 +1,100 @@
+.formulariocontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+  }
+  
+  /* Estilos para el formulario */
+  .formulario {
+    width: 400px;
+    padding: 80px;
+    background-color: #a370f0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  /* Estilos para los campos de entrada */
+  .inputs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+  }
+  
+  /* Estilos para los mensajes de error */
+  .errores {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+  }
+  
+  /* Estilos para los botones */
+  .botonsubmit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5804d7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+
+  }
+  
+  .botonsubmit:hover {
+    background-color: #864bdf;
+    display: flex;
+
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  .labels {
+    margin-bottom: 10px;
+    display: flex;
+
+  }
+  
+  /* Estilos para las opciones de género y plataformas */
+  .allGenre {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+  }
+  
+  .allGenre div {
+    display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 50%;
+
+  }
+  
+  /* Estilos para la etiqueta de los checkboxes */
+  .allGenre label {
+    margin-left: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  }
+  
+  /* Estilos para el contenedor principal */
+  .labels1 {
+    margin-bottom: 10px;
+
+  }
+  
+  /* Estilos para el contenedor de cada etiqueta y campo */
+  .labels1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }

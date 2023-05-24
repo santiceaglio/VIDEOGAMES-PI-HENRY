@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+  }
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../img/universe.webp.jpg');
+    background-size: cover;
+    background-position: center;
+    /* backdrop-filter: blur(20px); */
+    backdrop-filter: blur(10px);
+    
+  }
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* backdrop-filter: blur(20px); /* Ajusta el valor para controlar la cantidad de desenfoque */
+  /* -webkit-mask-image: linear-gradient(to left, transparent 0%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 100%); */ 
+  }
+
+  
+  .content {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    color: aliceblue;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backdrop-filter:none;
+  }
+
+  .lorem {
+    
+    position: absolute;
+    top: 55%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: transparent;
+    padding: 23px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    white-space: nowrap; /* Hace que el texto se muestre en una sola línea */
+  color: white;
+  }
+  
+  
+  .button {
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 15px;
+    border-radius: 30px;
+    width: 30vh;
+    cursor: pointer;
+    margin-top: 1px;
+    /* backdrop-filter: none; */
+  }
+  
+  .button:hover {
+    background-color: #a370f0;
+    color: #fff;
+    
+  }
+
+  .footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  .footerText {
+    font-size: 14px;
+  }
+
+  @font-face {
+    font-family: 'MiFuenteRegular';
+    src: url('../../../fonts/Alien-Encounters-Bold-Italic.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'MiFuenteNegrita';
+    src: url('../../../fonts/Alien-Encounters-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  .content {
+    font-family: 'MiFuenteRegular', sans-serif;
+  }
+  

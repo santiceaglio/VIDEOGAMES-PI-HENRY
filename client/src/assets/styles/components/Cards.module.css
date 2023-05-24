@@ -1,0 +1,18 @@
+.content {
+	display: flex;
+	width: 80%;
+	height: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.titleVacio {
+	text-align: center;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: #a370f0;
+	-webkit-text-stroke: 1px #5804d7;
+	margin-top: 2%;
+}

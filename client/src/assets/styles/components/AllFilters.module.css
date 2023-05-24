@@ -1,0 +1,122 @@
+.button {
+	background:#5804d7;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px black;
+  }
+  
+  .button:hover {
+    background: #a370f0;
+    color: black;
+      }
+  
+  /* Estilos para los contenedores de los filtros */
+  .contentFilterBox {
+	margin-bottom: 16px;
+	color: #5804d7;
+  }
+  
+  /* Estilos para los títulos de los filtros */
+  .filterTitle {
+	color: #5804d7;
+  }
+  
+  /* Estilos para las opciones de los selectores */
+  .select option {
+	background-color: white;
+	color: #5804d7;
+  }
+  
+  .select option:hover {
+	background-color: lavender;
+  }
+  
+  /* Estilos para los selectores */
+  .select {
+	padding: 4px;
+	border: 1px solid violet;
+	border-radius: 4px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* boton de restaurar */
+
+.buttonReset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 12px;
+	gap: 8px;
+	height: 50px;
+	width: 140px;
+	border: none;
+	background: #ff362b34;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.resetText {
+	line-height: 20px;
+	font-size: 20px;
+	color: #ff342b;
+	font-family:lemonDays,sans-serif;
+  font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.buttonReset:hover {
+	background: #ff362b52;
+}
+
+.buttonReset:hover .svg-icon {
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
