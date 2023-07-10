@@ -5,6 +5,7 @@ import {
     orderVideogames,
     filterOrigen,
     filterGenres,
+    getThreePlatforms,
 } from '../redux/actions';
 const AllFilters = () => {
     const dispatch = useDispatch();
@@ -23,6 +24,18 @@ const AllFilters = () => {
         }
         dispatch(orderVideogames(order));
     };
+
+    const handleGetPlatforms = (event)=>{
+        let platform = "";
+        switch(event.target.value){
+            case "3 o mas platform":
+                platform = "3 o mas plarform";
+                break;
+                default:
+                    platform = "default";
+        }
+        dispatch(getThreePlatforms(platform));
+    }
 
     const handleOrderRating = (event) => {
         let order = ''
@@ -153,6 +166,14 @@ const AllFilters = () => {
 					
 				</select>
 			</div>
+            <div>
+                <h2>PLATFORM MAYOR A 3</h2>
+                <select name= "" id= "" onChange={handleGetPlatforms}>
+                <option value = "default">default</option>
+                <option value = "3 o mas platform">3 o mas platform</option>
+
+                </select>
+            </div>
 
             
 

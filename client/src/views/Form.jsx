@@ -1,19 +1,22 @@
-
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
-import { getGenres, postVideogame } from '../redux/actions';
+import { getGenres } from '../redux/actions';
 import axios from 'axios';
 import { validate } from '../utils/validate';
 import style from '../assets/styles/components/views/Form.module.css';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 export default function Form() {
 
-  
+  const navigate = useNavigate();
   const gamesByGenre = useSelector((state) => state.genres);
   const [radioRatingValue, setRadioRatingValue] = useState(1);
   const [genreSelected, setGenreSelected] = useState([]);
   const [platformSelected, setPlatformSelected] = useState([]);
+
   console.log(radioRatingValue);
+ 
   console.log(platformSelected);
 
   function handleRadioChange(event) {
@@ -115,6 +118,8 @@ export default function Form() {
 
     console.log(newJuego);
 
+  
+
 try {
   await axios
       .post(`http://localhost:3001/videogames`, newJuego)
@@ -173,6 +178,14 @@ const submitHandler = (event) => {
   };
   return (
     <div className={style.formulariocontent}>
+      <button
+								onClick={() => {
+									navigate('/home');
+								}}
+								className={style.buttonBack}
+							>
+								Go back
+							</button>
       <div className={style.formulario}>
         <form className={style.form} onSubmit={submitHandler}>
           <div className={style.labels1}>

@@ -14,6 +14,7 @@ export const GENERATE_COPY = "GENERATE_COPY";
 export const CLEAN_DETAIL_BY_ID = "CLEAN_DETAIL_BY_ID";
 export const FILTER_ORIGEN ="FILTER_ORIGEN";
 export const FILTER_GENRE = "FILTER_GENRE"
+export const FILTER_THREE_PLATFORMS = "FILTER_THREE_PLATFORMS"
 
 
 
@@ -169,3 +170,11 @@ export const getGenres = () => {
       }
   }
 }
+
+export const getThreePlatforms = ()=>{
+  return{
+    type: FILTER,
+    payload: type
+  }
+
+  }

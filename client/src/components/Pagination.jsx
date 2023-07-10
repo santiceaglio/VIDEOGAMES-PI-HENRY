@@ -7,12 +7,12 @@ import Cards from './Cards';
 import styles from '../assets/styles/components/Pagination.module.css';
 
 const Pagination = () => {
-	//Aqui traigo todos los personajes, pero uso la copia
+	//Aqui traigo todos los videojuegos, pero uso la copia
 	const videoGames = useSelector((state) => state.copyVideogames);
 
 	//Estados para controlar la paginacion
 	const [currentPage, setCurrentPage] = useState(1);
-	const [itemsPerPage, setItemsPerPage] = useState(6);
+	const [itemsPerPage, setItemsPerPage] = useState(15);
 	const [pageNumberLimit, setPageNumberLimit] = useState(6);
 	const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(7);
 	const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);

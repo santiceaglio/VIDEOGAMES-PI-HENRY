@@ -11,7 +11,7 @@ async function getNameVideogame(req, res) {
   let results = []; // Inicializa una matriz vacía para almacenar los resultados de la búsqueda
 
   try {
-    // Busca juegos en la base de datos local que coincidan con el nombre proporcionado
+    // Busca juegos en la base de datos local que coincidan con el nombre proporcionado. uso op ilike me ayuda a buscar el nombre, como el toLowerCase.
     const videoGameFound = await Videogame.findAll({
       where: { name:{
         [Op.iLike]: `%${name}%` 
